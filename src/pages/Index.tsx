@@ -7,7 +7,7 @@ import Relatorios from "@/components/Relatorios";
 import MapaVisitas from "@/components/MapaVisitas";
 import Configuracoes from "@/components/Configuracoes";
 import NotificationCenter from "@/components/NotificationCenter";
-import { useSupabaseData } from "@/hooks/useSupabaseData";
+import { useMariaDBData } from "@/hooks/useMariaDBData";
 import { useNotifications } from "@/hooks/useNotifications";
 import { useToast } from "@/hooks/use-toast";
 
@@ -23,7 +23,7 @@ const Index = () => {
     addFollowUp, 
     updateConfig, 
     resetData 
-  } = useSupabaseData();
+  } = useMariaDBData();
   
   const { toast } = useToast();
 
